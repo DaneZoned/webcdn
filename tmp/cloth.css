@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background: #111;
+}
+
+canvas {
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.moveGUI {
+    position: fixed;
+    top: 0;
+    right: 0%;
+}
+
+.moveGUI > div {
+    min-height: 28px;
+    height: 28px;
+    width: 100%;
+}
+
+.moveGUI > div > ul {
+    position: absolute;
+    z-index: 0;
+}
+
+.moveGUI > div > ul {
+    display: table-row;
+}
+
+.moveGUI > div > ul > li {
+    display: table-cell;
+    min-width: 190px;
+    padding-left: 0px;
+    padding-right: 1px;
+}
+
+.moveGUI > div > ul > li.cr {
+    background: none;
+    line-height: normal;
+    vertical-align: top;
+    border-left: 0px !important;
+    border-bottom: 0px
+}
+
+.moveGUI > div > ul > li.cr >div {
+    background: #1a1a1a;
+    height: 27px !important;
+    padding-left: 6px;
+}
+
+.moveGUI .close-button {
+    display: none;
+}
