@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+canvas {
+    position: relative;
+    z-index: 0;
+}
