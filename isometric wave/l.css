@@ -1,6 +1,9 @@
 html,
 body {
-    margin: 0;
     background: #111;
     overflow: hidden;
+}
+
+canvas {
+    margin-top: 10%;
 }
