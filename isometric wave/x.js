@@ -92,13 +92,13 @@ var Options = function () {
     this.type = "x";
 };
 
-var myOptions = new Options(),
-    gui = new dat.GUI();
+var myOptions = new Options();
+var gui = new dat.GUI({});
 gui.open();
 
-var mapSize = gui.add(myOptions, 'mapSize', 5, 20).name('Grid size'),
-    tileHeight = gui.add(myOptions, 'tileHeight', 15, 30).name('Tile height'),
-    tileWidth = gui.add(myOptions, 'tileWidth', 30, 60).name('Tile width'),
-    speed = gui.add(myOptions, 'speed', 1, 10).name('Speed'),
-    strength = gui.add(myOptions, 'strength', 1, 5).name('Strength'),
-    type = gui.add(myOptions, 'type', ['x', 'y']).name('Direction');
+var mapSize = gui.add(myOptions, 'mapSize', 5, 20).name('Grid size');
+var tileHeight = gui.add(myOptions, 'tileHeight', 15, 30).name('Tile height');
+var tileWidth = gui.add(myOptions, 'tileWidth', 30, 60).name('Tile width');
+var speed = gui.add(myOptions, 'speed', 1, 10).name('Speed');
+var strength = gui.add(myOptions, 'strength', 1, 5).name('Strength');
+var type = gui.add(myOptions, 'type', ['x', 'y']).name('Direction');
