@@ -286,6 +286,6 @@ window.onload = function () {
     f1.add(config, 'cloth_height', 30, 60).name('Height').onChange(start);
     f1.add(config, 'spacing', 1, 10).name('Spacing').onChange(start);
     f1.add(config, 'tear_distance', 10, 100).name('Tear Resist');
-
+    f1.add(this, 'start');
     start();
 };
