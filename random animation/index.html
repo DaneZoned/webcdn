@@ -1,0 +1,37 @@
+This text was downloaded from Beetxt.com
+Beetxt.com is the quickest tool to save text online.
+
+This file: http://beetxt.com/Gk3
+Created: 2016-03-09
+-------------------------
+
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+<body style="margin:0;overflow:hidden">
+  
+<canvas id="c"></canvas>
+
+<script id="shader-fs" type="x-shader/x-fragment">
+				#ifdef GL_ES
+				  precision highp float;
+				  #endif
+    		void main(void) {
+    		 gl_FragColor = vec4(20.2, 50.3, 0.4, 1.0);
+    		}
+		</script>
+
+  <script id="shader-vs" type="x-shader/x-vertex">
+    	attribute vec3 vertexPosition;
+
+  	uniform mat4 modelViewMatrix;
+  	uniform mat4 perspectiveMatrix;
+
+   	void main(void) {
+  		gl_Position = perspectiveMatrix * modelViewMatrix * vec4(  vertexPosition, 1.0);
+  	}
+  </script>
+  <script src="x.js"></script>
+  </body>
+</html>
