@@ -3,11 +3,37 @@
 
 <head>
     <link rel="stylesheet" href="l.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 </head>
 
 <body>
-    <canvas id="network"></canvas>
-    <script src="x.js"></script>
+
+    <div class="js">
+        <div id="MEGALOADER">
+        </div>
+        <div id="loader">
+            <div id="shadow"></div>
+            <div id="box"></div>
+        </div>
+        <div href="#" id="content">
+             <canvas id="network"></canvas>
+        </div>
+
+       
+        <script src="x.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+
+                $(window).load(function () {
+                    $('#loader').fadeOut('slow', function () {
+                        $(this).remove();
+                    });
+                    $('#MEGALOADER').fadeOut('slow');
+                    $('#content').fadeIn('8000').show();
+                });
+
+            });
+        </script>
 </body>
 
 </html>
