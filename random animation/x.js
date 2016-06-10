@@ -1,10 +1,3 @@
-This text was downloaded from Beetxt.com
-Beetxt.com is the quickest tool to save text online.
-
-This file: http://beetxt.com/dNO
-Created: 2016-03-09
--------------------------
-
 window.onload = loadScene;
 
 var canvas, gl,
